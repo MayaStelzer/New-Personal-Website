@@ -59,14 +59,35 @@ section {
   padding: 50px 20px;
 }
 
-#about, #projects {
+#about {
   background-color: #244855;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#projects {
+  background-color: #244855;
+}
+
+#contact {
+  background-color: #FBE9D0;
   margin-top: -1px; /* Avoid spacing gaps */
 }
 
-#resume, #contact {
-  background-color: #FBE9D0;
-  margin-top: -1px; /* Avoid spacing gaps */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: center;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #313131;
+  font-family: 'opensans-bold', sans-serif;
+  font-weight: normal;
 }
 
 h2 {
@@ -77,10 +98,13 @@ h2 {
 }
 
 p {
-  font-family: "lora-regular", serif;
-  text-align: center;
-  font-size: 2rem;
-  color: #FBE9D0;
+  margin: 0 0 30px 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
 p1 {
@@ -88,4 +112,183 @@ p1 {
   text-align: center;
   font-size: 2rem;
   color: #244855;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-info {
+  margin-top: 4.2rem;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.intro-info .lead {
+  text-align: left;
+  padding-left: 13rem;
+}
+
+.intro-info img {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid #E64833;
+  border-radius: 50%;
+  margin: 0.9rem 1rem 0 2rem;
+  float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-info img {
+    height: 7.8rem;
+    width: 7.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-info img {
+    float: none;
+    height: 6.6rem;
+    width: 6.6rem;
+    display: inline-block;
+  }
+}
+
+p.lead {
+  font-family: "lora-regular", serif;
+  font-size: 1.2rem;
+  color: #FBE9D0;
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-info .lead {
+    padding-left: 11rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-info .lead {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section-intro h5 {
+  color: #E64833;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+}
+
+.section-intro {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3.6rem;
+  position: relative;
+}
+
+#about .section-intro {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.resume-button {
+  text-align: center;
+}
+
+.button, .button:visited {
+  font: 16px / 30px 'opensans-bold', sans-serif;
+  background: #90aead;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+#resume {
+  background-color: #FBE9D0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#resume .timeline-block {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+#resume .timeline-ico {
+  height: 4.8rem;
+  width: 4.8rem;
+  line-height: 4.8rem;
+  background: #313131;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 35%;
+  top: .9rem;
+  margin-left: -2.4rem;
+}
+
+#resume .timeline-header {
+  float: left;
+  width: 35%;
+  padding-right: 90px;
+  text-align: right;
+}
+
+#resume .timeline-header h3 {
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+#resume .timeline-header p {
+  font-family: "poppins-regular", sans-serif;
+  font-size: 1.6rem;
+  color: #888888;
+}
+
+@media only screen and (max-width: 1024px) {
+  #resume .timeline-header {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #resume .timeline-header, #resume .timeline-content {
+    padding-left: 7rem;
+  }
+}
+
+#resume .timeline-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
 }
