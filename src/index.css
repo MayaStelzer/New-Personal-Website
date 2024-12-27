@@ -6,6 +6,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
+  color: #838C95;
 }
 
 header {
@@ -68,6 +69,12 @@ section {
   padding-bottom: 5rem;
 }
 
+#resume {
+  background-color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 #projects {
   background-color: #ebeeee;
   padding-top: 90px;
@@ -75,8 +82,9 @@ section {
 }
 
 #contact {
-  background-color: #FBE9D0;
-  margin-top: -1px; /* Avoid spacing gaps */
+  background-color: #151515;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
@@ -231,12 +239,6 @@ h5 {
   height: auto;
   transition: all .2s ease-in-out;
   border-radius: 3px;
-}
-
-#resume {
-  background-color: #FBE9D0;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 #resume .timeline-block {
@@ -534,4 +536,129 @@ h4 {
   left: 50%;
   margin-left: -15px;
   margin-top: -15px;
+}
+
+.mfp-hide {
+  display: none !important;
+}
+
+.popup-modal {
+  max-width: 550px;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+}
+
+.popup-modal .description-box {
+  padding: 12px 36px 18px 36px;
+}
+
+.popup-modal .description-box h4 {
+  font: 15px / 24px 'opensans-bold', sans-serif;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.popup-modal .description-box h4 {
+  font: 14 / 24px 'opensans-regular', sans-serif;
+  color: #A1A1A1;
+  margin-bottom: 12px;
+}
+
+.popup-modal .description-box .categories {
+  font: 11px / 21px 'opensans-light', sans-serif;
+  color: #A1A1A1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  text-align: left;
+}
+
+.popup-modal .description-box .categories i {
+  margin-right: 8px;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.popup-modal .link-box {
+  padding: 18px 36px;
+  background: #111;
+  text-align: left;
+}
+
+.popup-modal .link-box a {
+  color: #fff;
+  font: 11px / 21px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+  outline: 0;
+  color: #90aead;
+  transition: color .3s ease-in-out;
+}
+
+.popup-modal a.popup-modal-dismiss {
+  margin-left: 24px;
+}
+
+#contact .section-intro h5 {
+  color: #E64833;
+}
+
+#contact .section-intro h1 {
+  color: white;
+}
+
+.section-intro h1 {
+  font-family: 'opensans-bold', sans-serif;
+  font-size: 3.6rem;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+
+#contact .section-intro p {
+  color: rgba (255, 255, 255, 0.7);
+}
+
+.contact-info {
+  margin: 4.8rem auto 0;
+  font-family: "poppins-regular", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info .col-four {
+  flex: 1;
+  margin: 0;
+}
+
+.contact-info .icon {
+  margin-bottom: 2.1rem;
+}
+
+.contact-info .icon i {
+  font-size: 4.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-info h5 {
+  color: #E64833;
+}
+
+.contact-info p {
+  margin: 0;
 }

@@ -112,7 +112,7 @@ function App() {
               <div class="columns portfolio-item">
                 <div class="item-wrap">
                   <a href="#modal-01" title="">
-                    <img alt src="./images/portfolio/BSP.png"/>
+                    <img alt="Binary Space Partitioning" src={require('./images/portfolio/website.png').default}/>
                     <div class="overlay">
                       <div class="portfolio-item-meta">
                         <h5>Binary Space Partitioning</h5>
@@ -128,8 +128,8 @@ function App() {
               
               <div class="columns portfolio-item">
                 <div class="item-wrap">
-                  <a href="#modal-01" title="">
-                    <img alt src="images/portfolio/website.png"/>
+                  <a href="#modal-02" title="">
+                    <img alt="Personal Website" src={require('./images/portfolio/website.png').default}/>
                     <div class="overlay">
                       <div class="portfolio-item-meta">
                         <h5>Personal Website</h5>
@@ -143,6 +143,35 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div id="model-01" class="popup-modal mfp-hide">
+              <img class="scale-with-grid" src="images/portfolio/website.png" alt/>
+              <div class="description-box">
+                <h4>Binary Space Partitioning</h4>
+                <p>Implemented naive and efficient Binary Space Partitioning from scratch. Performed unit tests and a performance evaluation comparing the simple algorithm against the efficient algorithm. Wrote an academic-style paper describing the problem and the algorithm it solves, the benchmarks for performance testing, and performance evaluation results.</p>
+                <span class="categories">
+                  <i class="fa fa-tag"/>C++</span>
+              </div>
+              <div class="link-box">
+                <a href="https://github.com/MayaStelzer/Binary-Space-Partitioning" target="_blank">Details</a>
+                <a class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+
+            <div id="model-02" class="popup-modal mfp-hide">
+              <img class="scale-with-grid" src="images/portfolio/website.png" alt/>
+              <div class="description-box">
+                <h4>Personal Website</h4>
+                <p>Created my own personal website for showing resume using React. </p>
+                <span class="categories">
+                  <i class="fa fa-tag"/>React, Javascript, HTML/CSS</span>
+              </div>
+              <div class="link-box">
+                <a href="https://github.com/MayaStelzer/New-Personal-Website" target="_blank">Details</a>
+                <a class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -150,8 +179,29 @@ function App() {
 
 
       <section id="contact">
-        <h2>Contact</h2>
-        <p1>Include your contact details here.</p1>
+        <div class="row section-intro">
+          <div class="col-twelve">
+            <h5>Contact</h5>
+            <h1>I'd Love To Connect With You.</h1>
+            <p class="lead">Feel free to reach out to me with any questions or opportunities.</p>
+          </div>
+        </div>
+        <div class="row contact-info">
+          <div class="col-four tab-full collapse">
+            <div class="icon">
+              <i class="fas fa-envelope"/>
+              <h5>Email Me At</h5>
+              <p>maya@bipper.net</p>
+            </div>
+          </div>
+          <div class="col-four tab-full collapse">
+            <div class="icon">
+              <i class="fa fa-linkedin"/>
+              <h5>Let's Connect</h5>
+              <a href="https://www.linkedin.com/in/mayastelzer/" target="_blank">LinkedIn Profile</a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
