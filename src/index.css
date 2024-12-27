@@ -69,7 +69,9 @@ section {
 }
 
 #projects {
-  background-color: #244855;
+  background-color: #ebeeee;
+  padding-top: 90px;
+  padding-bottom: 60px;
 }
 
 #contact {
@@ -188,6 +190,7 @@ h5 {
   font-size: 1.6rem;
   line-height: 1.875;
   margin-bottom: 0.3rem;
+  letter-spacing: .4rem;
 }
 
 .section-intro {
@@ -447,4 +450,88 @@ h4 {
 .row:before, .row::after {
   content: " ";
   display: table;
+}
+
+.section-intro h5 {
+  color: #E64833;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: .3rem;
+  letter-spacing: .4rem;
+}
+
+#projects h1 {
+  color: black;
+}
+
+
+.row .twelve {
+  width: 100%;
+}
+
+.column, .columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+
+#portfolio-wrapper .columns P{
+  margin-bottom: 36px;
+}
+
+.bgrid-quarters [class*="column"] {
+  width: 33%;
+}
+
+.portfolio-item .item-wrap a {
+  display: block;
+  cursor: pointer;
+}
+
+.portfolio-item .item-wrap img {
+  vertical-align: bottom;
+}
+
+.portfolio-item .item-wrap .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: url(../src/images/portfolio/overlay-bg.png);
+}
+
+.portfolio-item .portfolio-item-meta {
+  padding: 18px;
+}
+
+.portfolio-item .portfolio-item-meta h5 {
+  font: 14px/21px 'opensans-bold', sans-serif;
+  color: #fff;
+}
+
+.portfolio-item .portfolio-item-meta p {
+  font: 12px/18px 'opensans-light', sans-serif;
+  color: #c6c7c7;
+  margin-bottom: 0;
+}
+
+.portfolio-item .item-wrap .link-icon {
+  display: block;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
 }

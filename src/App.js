@@ -99,9 +99,56 @@ function App() {
         </div>
       </section>
       <section id="projects">
-        <h2>Projects</h2>
-        <p>Showcase some of your work here.</p>
+        <div class="row section-intro">
+          <div class="col-twelve">
+            <h5>Projects</h5>
+            <h1>Check out my creations.</h1>
+            </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns collapsed">
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+              <div class="columns portfolio-item">
+                <div class="item-wrap">
+                  <a href="#modal-01" title="">
+                    <img alt src="./images/portfolio/BSP.png"/>
+                    <div class="overlay">
+                      <div class="portfolio-item-meta">
+                        <h5>Binary Space Partitioning</h5>
+                        <p>Analysis of naive vs efficient BSP</p>
+                      </div>
+                    </div>
+                    <div class="link-icon">
+                      <i class="icon-plus"/>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="columns portfolio-item">
+                <div class="item-wrap">
+                  <a href="#modal-01" title="">
+                    <img alt src="images/portfolio/website.png"/>
+                    <div class="overlay">
+                      <div class="portfolio-item-meta">
+                        <h5>Personal Website</h5>
+                        <p>Web Development</p>
+                      </div>
+                    </div>
+                    <div class="link-icon">
+                      <i class="icon-plus"/>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+
+
       <section id="contact">
         <h2>Contact</h2>
         <p1>Include your contact details here.</p1>
