@@ -1,5 +1,6 @@
 import './index.css';
 import profilePic from './images/profilepic.jpg';
+import websiteImage from './images/portfolio/website.png';
 
 function App() {
   return (
@@ -14,11 +15,43 @@ function App() {
           </ul>
         </nav>
       </header>
+
       <section id="hero">
-        <div className="hero-content">
-          <h1>Maya Stelzer</h1>
+        <div class="row banner">
+          <h1 class="response-headline">Maya Stelzer</h1>
+          <h3>
+            <span>Student | </span>
+            <span>Software Developer | </span>
+            <span>Software Security Enthusiast</span>
+          </h3>
+          <h3>
+            <span>
+              background pic: Barcelona, Spain by Maya Stelzer
+              <span></span>
+            </span>
+          </h3>
+          <ul class="social">
+            <li>
+              <a href="https://github.com/MayaStelzer">
+                <i class="fab fa-github"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/mayastelzer/">
+                <i class="fa fa-linkedin"/>
+              </a>
+            </li>
+            <li>
+            <a href="mailto:your.email@example.com">
+                <i class="fab fa-envelope"/>
+              </a>
+            </li>
+
+          </ul>
         </div>
       </section>
+      
+    
       <section id="about">
         <div class="row section-intro">
           <div class="col-twelve">
@@ -112,8 +145,8 @@ function App() {
               <div class="columns portfolio-item">
                 <div class="item-wrap">
                   <a href="#modal-01" title="">
-                    <img alt="Binary Space Partitioning" src={require('./images/portfolio/website.png').default}/>
-                    <div class="overlay">
+                  <img alt="Profile Picture" src={websiteImage}/>
+                  <div class="overlay">
                       <div class="portfolio-item-meta">
                         <h5>Binary Space Partitioning</h5>
                         <p>Analysis of naive vs efficient BSP</p>
@@ -175,8 +208,6 @@ function App() {
           </div>
         </div>
       </section>
-
-
 
       <section id="contact">
         <div class="row section-intro">
