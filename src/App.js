@@ -3,6 +3,7 @@ import "./index.css";
 import profilePic from "./images/profilepic.jpg";
 import websiteImage from "./images/portfolio/website.png";
 import BSPImage from "./images/portfolio/bsp.png";
+import MadridMetro from "./images/portfolio/madrid-metro.png";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
@@ -125,7 +126,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:maya@bipper.net">
                 <i className="fa fa-envelope" />
               </a>
             </li>
@@ -212,7 +213,7 @@ function App() {
                 <h4>Gonzaga University</h4>
                 <p>
                   Majoring in Computer Science, concentrating in Software Application Development and Software Security,
-                  with a minor in Applied Mathematics. Maintaining a 3.9 GPA.
+                  with a minor in Applied Mathematics. Maintaining a 3.9 GPA with an expected graduation of May 2026.
                 </p>
               </div>
             </div>
@@ -230,10 +231,23 @@ function App() {
         <div className="row">
           <div class="twelve columns collapsed">
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-              
-              <div className="columns portfolio-item">
+            <div className="columns portfolio-item">
                 <div className="item-wrap">
                   <a href="#modal-01" title="">
+                    <img alt="Project" src={MadridMetro} />
+                    <div className="overlay">
+                      <div className="portfolio-item-meta">
+                        <h5>Madrid Metro Database</h5>
+                        <p>Implemented a database to manage user registration, metro card purchases, monthly recharges, and
+                        replacements</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="columns portfolio-item">
+                <div className="item-wrap">
+                  <a href="#modal-02" title="">
                     <img alt="Project" src={BSPImage} />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
@@ -246,12 +260,12 @@ function App() {
               </div>
                 <div className="columns portfolio-item">
                   <div className="item-wrap">
-                    <a href="#modal-02" title="">
+                    <a href="#modal-03" title="">
                       <img alt="Project" src={websiteImage} />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>Personal Website</h5>
-                          <p>Web Development</p>
+                          <p>Created my personal website using React to showcase my projects and resume.</p>
                         </div>
                       </div>
                     </a>
@@ -260,6 +274,22 @@ function App() {
             </div>
           </div>
           <div id="modal-01" className="popup-modal">
+            <div className="modal-content">
+              <span className="close-modal">&times;</span>
+              <img src={MadridMetro} alt="Madrid Metro Database" />
+              <h4>Madrid Metro Database</h4>
+              <p>
+              I designed ER models and relational schemas for the Madrid Metro ticket 
+              system and implemented a database to manage user registration, metro card 
+              purchases, monthly recharges, and replacements.
+              </p>
+              <a href="https://github.com/MayaStelzer/MadridMetro" target="_blank">
+                Details
+              </a>
+            </div>
+          </div>
+
+          <div id="modal-02" className="popup-modal">
             <div className="modal-content">
               <span className="close-modal">&times;</span>
               <img src={BSPImage} alt="Binary Space Partitioning" />
@@ -276,7 +306,7 @@ function App() {
             </div>
           </div>
 
-          <div id="modal-02" className="popup-modal">
+          <div id="modal-03" className="popup-modal">
             <div className="modal-content">
               <span className="close-modal">&times;</span>
               <img src={websiteImage} alt="Personal Website" />
