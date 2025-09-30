@@ -142,8 +142,8 @@ function App() {
               <img src={profilePic} alt="Profile" />
               <p className="lead">
                 Hello! I am Maya, a Computer Science student at Gonzaga University, originally from the Bay Area. I am
-                proficient in Java, C++, Python, SQL, HTML, CSS, JavaScript, React, and Kotlin. I am currently looking
-                for internships for Summer 2025.
+                proficient in Java, C++, C#, Python, SQL, HTML, CSS, JavaScript, React, and Kotlin. I am currently looking
+                for full time roles for after graduation in May 2026.
               </p>
             </div>
           </div>
@@ -174,14 +174,13 @@ function App() {
                 <i className="fa fa-briefcase" />
               </div>
               <div className="timeline-header">
-                <h3>Deep Learning Intern</h3>
-                <p>August 2024 - December 2024</p>
+                <h3>Implementation Consultant Intern</h3>
+                <p>June 2025 - August 2025</p>
               </div>
               <div className="timeline-content">
-                <h4>Qompass AI</h4>
+                <h4>Fast Enterprises</h4>
                 <p>
-                  Learning practical applications of secure data transfer with GPG, exploring the most recent AI models
-                  on HuggingFace, and analyzing LLM functionality.
+                  Developed custom C# and SQL solutions for enterprise unemployment insurance and paid leave systems. Conducted thorough QA testing and translated business requirements into technical solutions, in a fast-paced, client facing environment
                 </p>
               </div>
             </div>
@@ -191,12 +190,12 @@ function App() {
               </div>
               <div className="timeline-header">
                 <h3>Teacher's Assistant</h3>
-                <p>Fall 2024, Spring 2025</p>
+                <p>Fall 2024, Spring 2025, Fall 2025</p>
               </div>
               <div className="timeline-content">
                 <h4>Gonzaga University</h4>
                 <p>
-                  TA for Data Structures and Algorithms and Intro to CSII. Provided constructive, positive feedback to
+                  TA for Data Structures and Algorithms and Intro to CSII, Crytography. Provided constructive, positive feedback to
                   students on programming assignments, quizzes, and exams.
                 </p>
               </div>
